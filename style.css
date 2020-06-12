@@ -1,0 +1,116 @@
+/* Reset default margins & borders */
+body,html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Primary container */
+
+@keyframes introEnd {
+    from {
+        background-color: brown;
+    }
+
+    to {
+        background-color: black;
+    }
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    animation-name: introEnd;
+    animation-duration: 3s;
+    animation-delay: 10s;
+}
+
+.bg-overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.35;
+}
+
+@keyframes curtain {
+    from {
+      height: 0vh;
+    }
+  
+    to {
+      height: 100vh;
+    }
+}
+
+.curtain {
+    height: 20vh;
+    width: 100%;
+    animation-name: curtain;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    background-color: brown;
+}
+
+.number {
+    z-index: 2;
+    position: absolute;
+    top: 49%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size:72;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+
+.upper-text {
+    z-index: 2;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size:72;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+
+.bottom-text {
+    z-index: 2;
+    position: absolute;
+    top: 65%;
+    right: 5%;
+    font-size:72;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+
+@keyframes fadeInOut {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity: 0;}
+}
+
+.animateText {
+    animation-name: fadeInOut;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-timing-function:linear;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.animateText2 {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-timing-function:linear;
+}
