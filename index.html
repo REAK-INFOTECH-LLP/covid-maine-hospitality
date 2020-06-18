@@ -1,24 +1,64 @@
 <html>
-  <head>
-    <title>COVID Loss</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet"> 
-    <script src="init.js"></script> 
-  </head>
-  <body>
-    <div id="container" class="container">
-        <img class="bg-overlay" src="maine.svg" />
-        <div id="upper-text" class="upper-text" style="display: none;">Hospitality Businesses in Maine lost </div>
-        <div id="tempCount" class="number"><span class="currency">$</span><span id="tempCountNum" class="text">1</span></div>
-        <div id="websiteLife" class="" style="display: none;">
-          <div class="number"><span class="currency">$</span><span id="websitelifeCost" class="text">1</span></div>
-          <div class="bottom-text"> while you have been on this website ... </div>
-        </div>
-        <div id="lockdownLife" class="" style="display: none;">
-          <div class="number"><span class="currency">$</span><span id="totalCost" class="text">1</span></div>
-          <div class="bottom-text"> since the lockdown ... </div>
-        </div>
-      <div id="curtain" class="curtain"></div>
+
+<head>
+  <title>COVID Loss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
+  <script src="init.js"></script>
+</head>
+
+<body>
+  <div id="container" class="container">
+    <img class="bg-overlay" src="maine.svg" />
+    <div id="title-text" class="title-text" style="display: none;">
+      Maine and Hospitality Industry during COVID-19
+      <hr class="border-1" />
     </div>
-  </body>
+    <div id="tempCount" class="number"><span class="currency">$</span><span id="tempCountNum" class="text">1</span>
+    </div>
+    <div id="upper-text" style="display: none;">
+      <span class="header">Hospitality Industry in Maine have lost<hr class="border-2" /></span><span class="border-1"></span>
+      <div class="data">
+        <div class="col2-3">
+          <div class="lineItem"><span class="currency">$</span><span id="websitelifeCost" class="text">1</span><span
+              class="subtext">
+              while you have been on this website</span></div>
+          <div class="lineItem"><span class="currency">$</span><span id="totalCost" class="text">1</span><span
+              class="subtext"> since
+              lockdown</span></div>
+        </div>
+        <div class="col1-3">
+          <ul>
+            <li id="1">1</li>
+            <li id="2">1</li>
+            <li id="3">1</li>
+            <li id="4">1</li>
+          </ul>
+        </div>
+      </div>
+      <div class="separate"></div>
+      <span class="header">Maine State has foregone revenue<hr class="border-2" /></span><span class="border-1"></span>
+      <div class="data">
+        <div class="col2-3">
+          <div class="lineItem"><span class="currency">$</span><span id="websitelifeCost6" class="text">1</span><span
+              class="subtext">
+              while you have been on this website</span></div>
+          <div class="lineItem"><span class="currency">$</span><span id="totalCost6" class="text">1</span><span
+              class="subtext"> since
+              lockdown</span></div>
+        </div>
+        <div class="col1-3">
+          <ul>
+            <li id="61">1</li>
+            <li id="62">1</li>
+            <li id="63">1</li>
+            <li id="64">1</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="curtain" class="curtain"></div>
+  </div>
+</body>
+
 </html>

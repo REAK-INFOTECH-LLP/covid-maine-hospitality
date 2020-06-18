@@ -2,6 +2,8 @@
 body,html {
     margin: 0;
     padding: 0;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -68,10 +70,24 @@ body,html {
     font-family: 'Mukta', sans-serif;
 }
 
+.lineItem {
+    z-index: 2;
+    font-size:36;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+
+.title-text {
+    padding-top: 2%;
+    text-align: center;
+    font-size:72;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+
 .upper-text {
     z-index: 2;
     position: absolute;
-    top: 35%;
     left: 5%;
     font-size:72;
     color: #fff;
@@ -81,36 +97,44 @@ body,html {
 .bottom-text {
     z-index: 2;
     position: absolute;
-    top: 65%;
     right: 5%;
     font-size:72;
     color: #fff;
     font-family: 'Mukta', sans-serif;
 }
 
-@keyframes fadeInOut {
-    0% {opacity:0;}
-    50% {opacity:1;}
-    100% {opacity: 0;}
+.col2-3 {
+    padding-top: 2%;
+    width: 75%;
+    float: left;
 }
 
-.animateText {
-    animation-name: fadeInOut;
-    animation-duration: 5s;
-    animation-delay: 0s;
-    animation-timing-function: ease-out;
-    animation-timing-function:linear;
+.col1-3 {
+    padding-top: 2%;
+    width: 25%;
+    float: right;
+    font-size: 18;
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+.header {
+    padding-top: 3%;
+    font-size: 48;
+    float: left;
 }
 
-.animateText2 {
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-timing-function: ease-out;
-    animation-timing-function:linear;
+.data {
+    padding-left: 10%;
+}
+
+.border-1 {
+    height:5px;
+    width: 85%;
+    border-color: red;
+    border-width: 2px;
+}
+
+.border-2 {
+    width: 100%;
+    border-color: red;
+    border-width: 2px;
 }
