@@ -78,7 +78,6 @@ body,html {
 }
 
 .title-text {
-    padding-top: 2%;
     text-align: center;
     font-size:72;
     color: #fff;
@@ -87,7 +86,6 @@ body,html {
 
 .upper-text {
     z-index: 2;
-    position: absolute;
     left: 5%;
     font-size:72;
     color: #fff;
@@ -96,7 +94,6 @@ body,html {
 
 .bottom-text {
     z-index: 2;
-    position: absolute;
     right: 5%;
     font-size:72;
     color: #fff;
@@ -104,22 +101,19 @@ body,html {
 }
 
 .col2-3 {
-    padding-top: 2%;
     width: 75%;
     float: left;
 }
 
 .col1-3 {
-    padding-top: 2%;
     width: 25%;
     float: right;
     font-size: 18;
 }
 
 .header {
-    padding-top: 3%;
     font-size: 48;
-    float: left;
+    padding-left: 10px;
 }
 
 .data {
@@ -134,7 +128,22 @@ body,html {
 }
 
 .border-2 {
-    width: 100%;
+    width: 30%;
+    margin-left: 0px;
     border-color: red;
     border-width: 2px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    left:0;
+    right:0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.separate {
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
